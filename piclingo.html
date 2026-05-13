@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicLingo</title>
+    <meta name="description" content="카메라를 겨누기만 하면 AI가 즉시 번역하고 전 세계 커뮤니티가 검증하는 세상에서 가장 즐거운 번역 앱, PicLingo.">
+    <link rel="stylesheet" href="piclingo.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-logo">
+            <div class="logo-icon">📸</div>
+            <span class="logo-text">PicLingo</span>
+        </div>
+        <div class="nav-links">
+            <a href="#background">배경</a>
+            <a href="#architecture">구조도</a>
+
+            <a href="#features">솔루션</a>
+            <a href="#screens">UI/UX 디자인</a>
+            <a href="#tech">Tools</a>
+            <a href="#ai">AI</a>
+            <a href="#process">과정</a>
+        </div>
+        <div class="nav-spacer" style="width: 200px;"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <!-- Floating dots -->
+            <div class="floating-dot"
+                style="top: 18%; left: 8%; width: 14px; height: 14px; background: var(--yellow); animation: float 3s ease-in-out infinite;">
+            </div>
+            <div class="floating-dot"
+                style="top: 72%; left: 15%; width: 9px; height: 9px; background: var(--orange); animation: float 3.4s ease-in-out infinite 0.4s;">
+            </div>
+            <div class="floating-dot"
+                style="top: 35%; right: 12%; width: 12px; height: 12px; background: var(--yellow); animation: float 3.8s ease-in-out infinite 0.8s;">
+            </div>
+            <div class="floating-dot"
+                style="top: 82%; right: 8%; width: 18px; height: 18px; background: var(--orange); animation: float 3.2s ease-in-out infinite 0.2s;">
+            </div>
+            <div class="floating-dot"
+                style="top: 55%; left: 42%; width: 7px; height: 7px; background: var(--yellow); animation: float 4s ease-in-out infinite 1s;">
+            </div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <div class="badge">AI VISION & COMMUNITY</div>
+                <h1><br><span class="gradient-text">Snap, Solve, Smile<br>PicLingo</span></h1>
+                <p class="hero-description">
+                    PicLingo와 함께라면 누구나 세상을 내 언어로 보고 공유할 수 있습니다.
+                </p>
+                <div class="hero-btns">
+                    <button class="btn-primary">📸</button>
+                    <button class="btn-outline">서비스 더 알아보기</button>
+                </div>
+                <div class="social-proof">
+                    <div class="avatars">
+                        <span>👩</span><span>👨</span><span>🧑</span><span>👧</span>
+                    </div>
+                    <div class="proof-text">
+                        <strong></strong>
+                        <p>번역 데이터를 쌓고 저장 ! </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-illustration reveal" style="transition-delay: 0.2s;">
+                <div class="phone-wrapper" style="max-width: 280px; margin: 0 auto;">
+                    <div class="device-mockup" style="border-width: 8px;">
+                        <div class="device-screen">
+                            <img src="img/camera_capture_screen.png" alt="PicLingo Hero Screen">
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-badge badge-top">🔍 0.8초 만에 번역!</div>
+                <div class="floating-badge badge-bottom">🏅 커뮤니티 회화</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <!-- 01 Background Section -->
+    <section class="features" id="background">
+        <div class="container">
+            <div class="reveal">
+                <span class="sub-title">배경</span>
+            </div>
+            <div class="reveal" style="transition-delay: 0.1s;">
+                <h2 class="section-title">이런 경험,<br><span class="highlight">있지 않으신가요?</span></h2>
+            </div>
+            <div class="reveal" style="transition-delay: 0.2s;">
+                <p class="features-description">
+                    해외 여행 중 낯선 언어로 된 메뉴판을 보고 당황했던 적, 현지인들만 아는 진짜 맛집을 찾고 싶었지만 소통이 어려웠던 적.
+                    기존 번역 앱은 정확도가 떨어지거나 현지의 맥락을 담아내지 못하는 한계가 있었습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 02 Architecture Section -->
+    <section id="architecture" class="architecture">
+        <div class="container">
+            <div class="reveal">
+                <span class="sub-title">구조도</span>
+            </div>
+            <div class="reveal" style="transition-delay: 0.1s;">
+                <h2 class="section-title">App Architecture</h2>
+            </div>
+
+            <div class="flow-container reveal" style="transition-delay: 0.2s;">
+                <div class="flow-node highlight">로그인 / 회원가입 (Auth)</div>
+                <div class="flow-arrow-v"></div>
+
+                <div class="flow-grid">
+                    <!-- Column 1: Learning -->
+                    <div class="flow-column">
+                        <div class="flow-node">언어 학습 (Learning)</div>
+                        <div class="flow-arrow-v"></div>
+                        <div class="flow-step">맞춤형 회화집</div>
+                        <div class="flow-arrow-v"></div>
+                        <div class="flow-step">발음 연습 & 평가</div>
+                    </div>
+
+                    <!-- Column 2: AI Translation (MVP) -->
+                    <div class="flow-column">
+                        <div class="flow-node orange">AI 번역 (MVP Core)</div>
+                        <div class="flow-arrow-v"></div>
+                        <div class="flow-step mvp">실시간 카메라 스캔</div>
+                        <div class="flow-arrow-v"></div>
+                        <div class="flow-step mvp">Gemini Vision 번역</div>
+                        <div class="flow-arrow-v"></div>
+                        <div class="flow-step mvp">텍스트 추출 & 저장</div>
+                    </div>
+
+                    <!-- Column 3: Community -->
+                    <div class="flow-column">
+                        <div class="flow-node">커뮤니티 (Trust)</div>
+                        <div class="flow-arrow-v"></div>
+                        <div class="flow-step">원어민 검증 피드</div>
+                        <div class="flow-arrow-v"></div>
+                        <div class="flow-step">실시간 Q&A</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="reveal">
+                <span class="sub-title">솔루션</span>
+            </div>
+            <div class="reveal" style="transition-delay: 0.1s;">
+                <h2 class="section-title">PicLingo가<br><span class="highlight">해결합니다. 😄</span></h2>
+            </div>
+            <div class="reveal" style="transition-delay: 0.2s;">
+                <p class="features-description">
+                    AI 사진 번역부터 커뮤니티 인증, 맞춤형 회화 서비스까지. 언어의 장벽을 만나는 모든 순간을 하나의 앱으로 해결합니다.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1: AI 사진 번역 -->
+                <div class="feature-card yellow-card reveal">
+                    <div class="illu-box">
+                        <!-- IlluCamera SVG -->
+                        <svg viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="width: 100px; height: 84px;">
+                            <rect x="8" y="24" width="104" height="68" rx="12" fill="#1A1200" />
+                            <rect x="14" y="30" width="92" height="56" rx="8" fill="#2A1F00" />
+                            <circle cx="60" cy="58" r="22" fill="#111" stroke="#F5B800" stroke-width="2.5" />
+                            <circle cx="60" cy="58" r="15" fill="#1A1A1A" />
+                            <circle cx="60" cy="58" r="9" fill="#222" />
+                            <circle cx="55" cy="53" r="3" fill="white" opacity="0.25" />
+                            <rect x="76" y="34" width="22" height="10" rx="5" fill="#FFD600" />
+                            <rect x="44" y="10" width="32" height="16" rx="8" fill="#1A1200" />
+                            <circle cx="60" cy="18" r="4" fill="#FFD600" />
+                            <text x="94" y="34" font-size="16">✨</text>
+                        </svg>
+                    </div>
+                    <div class="feature-tag" style="background: var(--yellow);">AI 핵심</div>
+                    <h3>AI 사진 번역</h3>
+                    <p>구글 Gemini API의 비전 모델이 사진 속 글자를 정확하게 읽어냅니다. 메뉴판, 간판, 포장지, 손글씨까지 — 현실이 0.8초 안에 한국어로 바뀝니다.</p>
+                </div>
+
+                <!-- Feature 2: 기본 번역 & 필수 회화 -->
+                <div class="feature-card orange-card reveal" style="transition-delay: 0.1s;">
+                    <div class="illu-box">
+                        <!-- IlluGlobe SVG -->
+                        <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="width: 120px; height: 120px;">
+                            <circle cx="80" cy="80" r="68" fill="var(--yellow-light)" stroke="var(--border)"
+                                stroke-width="2" />
+                            <ellipse cx="80" cy="80" rx="30" ry="68" fill="none" stroke="var(--border)"
+                                stroke-width="1.5" stroke-dasharray="4 3" />
+                            <line x1="12" y1="80" x2="148" y2="80" stroke="var(--border)" stroke-width="1.5"
+                                stroke-dasharray="4 3" />
+                            <line x1="24" y1="48" x2="136" y2="48" stroke="var(--yellow-soft)" stroke-width="1"
+                                stroke-dasharray="3 3" />
+                            <line x1="24" y1="112" x2="136" y2="112" stroke="var(--yellow-soft)" stroke-width="1"
+                                stroke-dasharray="3 3" />
+                            <circle cx="54" cy="62" r="6" fill="var(--yellow)" stroke="var(--yellow-dark)"
+                                stroke-width="1.5" />
+                            <circle cx="54" cy="62" r="3" fill="var(--yellow-dark)" />
+                            <circle cx="110" cy="90" r="6" fill="var(--orange)" stroke="var(--ink)"
+                                stroke-width="1.5" />
+                            <circle cx="110" cy="90" r="3" fill="var(--ink)" />
+                            <circle cx="78" cy="108" r="6" fill="var(--yellow-deep)" stroke="var(--yellow-dark)"
+                                stroke-width="1.5" />
+                            <circle cx="78" cy="108" r="3" fill="var(--yellow-dark)" />
+                            <path d="M54 62 Q80 40 110 90" stroke="var(--yellow-deep)" stroke-width="1.5"
+                                stroke-dasharray="4 3" fill="none" />
+                            <path d="M110 90 Q90 120 78 108" stroke="var(--orange)" stroke-width="1.5"
+                                stroke-dasharray="4 3" fill="none" />
+                        </svg>
+                    </div>
+                    <div class="feature-tag" style="background: var(--orange);">여행 필수</div>
+                    <h3>기본 번역 & 필수 회화</h3>
+                    <p>타이핑하거나 말해도 즉시 번역. 여행자를 위한 오프라인 언어 팩으로 데이터 없이도 음식 주문부터 긴급 상황까지 척척.</p>
+                </div>
+
+                <!-- Feature 3: 커뮤니티 인증 시스템 -->
+                <div class="feature-card orange-card reveal" style="transition-delay: 0.2s;">
+                    <div class="illu-box">
+                        <!-- IlluCommunity SVG -->
+                        <svg viewBox="0 0 180 150" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="width: 160px; height: 130px;">
+                            <circle cx="50" cy="58" r="22" fill="var(--yellow-light)" stroke="var(--border)"
+                                stroke-width="1.5" />
+                            <text x="50" y="65" text-anchor="middle" font-size="20">🇯🇵</text>
+                            <circle cx="112" cy="48" r="22" fill="var(--yellow)" stroke="var(--border)"
+                                stroke-width="1.5" />
+                            <text x="112" y="55" text-anchor="middle" font-size="20">🇩🇪</text>
+                            <circle cx="80" cy="95" r="22" fill="var(--primary)" stroke="var(--border)"
+                                stroke-width="1.5" />
+                            <text x="80" y="102" text-anchor="middle" font-size="20">🇰🇷</text>
+                            <circle cx="142" cy="75" r="22" fill="var(--orange-light)" stroke="var(--border)"
+                                stroke-width="1.5" />
+                            <text x="142" y="82" text-anchor="middle" font-size="20">🇫🇷</text>
+                            <circle cx="28" cy="100" r="22" fill="var(--yellow-soft)" stroke="var(--border)"
+                                stroke-width="1.5" />
+                            <text x="28" y="107" text-anchor="middle" font-size="20">🇲🇽</text>
+                            <rect x="55" y="110" width="72" height="24" rx="12" fill="var(--primary)" />
+                            <text x="91" y="126" text-anchor="middle" font-size="9" font-family="sans-serif"
+                                fill="var(--ink)" font-weight="700">맞아요! 👍</text>
+                            <polygon points="68,134 76,134 72,142" fill="var(--primary)" />
+                        </svg>
+                    </div>
+                    <div class="feature-tag" style="background: var(--orange);">함께 만들기</div>
+                    <h3>커뮤니티 인증 시스템</h3>
+                    <p>원어민 커뮤니티가 AI 번역을 실시간으로 검증·보완합니다. 좋아요, 수정 제안, 현지 팁으로 번역이 점점 더 똑똑해져요.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Persona Section -->
+    <section>
+
+        <!-- Community Section (Optional for Case Study) -->
+        <section id="community" class="community" style="background: var(--white);">
+            <div class="container">
+                <div class="reveal">
+                    <span class="sub-title"></span>
+                </div>
+                <div class="reveal" style="transition-delay: 0.1s;">
+                    <h2 class="section-title">누구를 위한 앱인가요?<br><span class="highlight"></span></h2>
+                    <h3> 고민을 가진 다양한 사용자를 인터뷰해 3명의 대표 페르소나를 도출했습니다. 바쁜 직장인부터 자영업자 , 대학생 사용자까지 폭넓은 니즈를 반영했습니다.</h3>
+                </div>
+
+                <div class="persona-box-list">
+                    <!-- Persona 1 -->
+                    <div class="persona-box reveal">
+                        <div class="persona-box-img">👩</div>
+                        <div class="persona-box-content">
+                            <div class="persona-box-header">
+                                <div class="persona-box-name">김지수 (28세, 직장인)</div>
+                                <div class="persona-box-meta">마케팅 담당 · 서울 · 나홀로 여행가</div>
+                            </div>
+                            <p class="persona-box-quote">"혼자 여행하며 현지 맛집을 찾지만, 메뉴판이 글자만 있어 주문하기 막막해요. <strong>AI의 즉각적인
+                                    번역</strong>이 절실합니다."</p>
+                        </div>
+                    </div>
+                    <!-- Persona 2 -->
+                    <div class="persona-box reveal" style="transition-delay: 0.1s;">
+                        <div class="persona-box-img orange">👨</div>
+                        <div class="persona-box-content">
+                            <div class="persona-box-header">
+                                <div class="persona-box-name">이민준 (34세, 자영업자)</div>
+                                <div class="persona-box-meta">카페 운영 · 부산 · 미식 탐험가</div>
+                            </div>
+                            <p class="persona-box-quote">"해외 시장 조사를 할 때 낯선 언어 앞에서는 정보가 제한적이에요. <strong>현지 맥락까지 담은
+                                    번역</strong>이 큰 도움이 됩니다."</p>
+                        </div>
+                    </div>
+                    <!-- Persona 3 -->
+                    <div class="persona-box reveal" style="transition-delay: 0.2s;">
+                        <div class="persona-box-img pink">👧</div>
+                        <div class="persona-box-content">
+                            <div class="persona-box-header">
+                                <div class="persona-box-name">박소연 (22세, 대학생)</div>
+                                <div class="persona-box-meta">언어 교육 전공 · 대구 · 언어 학습자</div>
+                            </div>
+                            <p class="persona-box-quote">"전공 공부 중에도 손글씨나 실생활 약어는 정말 어렵더라고요. <strong>PicLingo
+                                    덕분에</strong>
+                                공부를 더 쉽게 할 수 있을거 같아요."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 04 Screen Preview Section -->
+        <section id="screens" class="tech-stack" style="background: var(--ink); color: var(--white);">
+            <div class="container">
+                <div class="reveal">
+                    <span class="sub-title" style="color: var(--primary);">UI/UX 디자인</span>
+                </div>
+                <div class="reveal" style="transition-delay: 0.1s;">
+                    <h2 class="section-title" style="color: var(--white);">앱 화면을<br><span class="highlight"
+                            style="color: var(--primary);">미리 보세요.</span></h2>
+                </div>
+
+                <div class="tech-grid">
+                    <!-- Screen 1: Camera -->
+                    <div class="tech-item reveal">
+                        <strong>메인 카메라</strong>
+                        <div class="device-mockup">
+                            <div class="device-screen">
+                                <img src="img/camera_capture_screen.png" alt="PicLingo Camera">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Screen 2: Translation Start -->
+                    <div class="tech-item reveal" style="transition-delay: 0.1s;">
+                        <strong>사진 업로드</strong>
+                        <div class="device-mockup">
+                            <div class="device-screen">
+                                <img src="img/translation_start_screen.png" alt="PicLingo Translation Start">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Screen 3: Community -->
+                    <div class="tech-item reveal" style="transition-delay: 0.2s;">
+                        <strong>회화</strong>
+                        <div class="device-mockup">
+                            <div class="device-screen">
+                                <img src="img/trsave.png" alt="PicLingo Community">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05 AI Tools Section -->
+        <section id="tech" class="tech-stack">
+            <div class="container">
+                <div class="reveal">
+                    <span class="sub-title">AI TOOLS</span>
+                </div>
+                <div class="reveal" style="transition-delay: 0.1s;">
+                    <h2 class="section-title">내가 이 어플을 만들 때<br><span class="highlight">함께한 AI 툴들</span></h2>
+                </div>
+                <div class="reveal" style="transition-delay: 0.2s;">
+                    <p class="features-description">
+                        기획부터 디자인, 개발까지 전 과정에서 AI의 도움을 받아 더 빠르고 효율적으로 프로젝트를 완성했습니다.
+                    </p>
+                </div>
+
+                <div class="tech-grid">
+                    <!-- Tool 1 -->
+                    <div class="tech-item reveal">
+                        <div class="tech-icon">🤖</div>
+                        <div class="tech-name">Claude 3.5</div>
+                        <div class="tech-role">기획 및 코드 최적화</div>
+                    </div>
+                    <!-- Tool 2 -->
+                    <div class="tech-item reveal" style="transition-delay: 0.1s;">
+                        <div class="tech-icon" style="color: var(--secondary);">✨</div>
+                        <div class="tech-name">Gemini API</div>
+                        <div class="tech-role">비전 AI 핵심 엔진</div>
+                    </div>
+                    <!-- Tool 3 -->
+                    <div class="tech-item reveal" style="transition-delay: 0.2s;">
+                        <div class="tech-icon" style="color: var(--ink);">💬</div>
+                        <div class="tech-name">ChatGPT</div>
+                        <div class="tech-role">브레인스토밍 & 로직 검증</div>
+                    </div>
+                    <!-- Tool 4 -->
+                    <div class="tech-item reveal" style="transition-delay: 0.3s;">
+                        <div class="tech-icon" style="color: var(--ink-soft);">🔍</div>
+                        <div class="tech-name">Perplexity</div>
+                        <div class="tech-role">실시간 시장 리서치</div>
+                    </div>
+                    <!-- Tool 5 -->
+                    <div class="tech-item reveal" style="transition-delay: 0.4s;">
+                        <div class="tech-icon" style="color: var(--orange);">🪄</div>
+                        <div class="tech-name">Gamma AI</div>
+                        <div class="tech-role">발표 자료 시각화</div>
+                    </div>
+                </div>
+
+                <div class="tech-highlight reveal" style="transition-delay: 0.5s;">
+                    <span class="tech-highlight-icon">💡</span>
+                    <div>
+                        <h4>AI 협업의 가치</h4>
+                        <p>
+                            단순한 도구를 넘어 협업 파트너로서 AI를 활용했습니다.
+                            복잡한 알고리즘 구현 시간을 60% 단축하고, 더 창의적인 UI 인터랙션 기획에 집중할 수 있었습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        </p>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- 06 AI Usage & Prompts Section -->
+    <section id="ai" class="ai-usage">
+        <div class="container split-layout">
+            <!-- Left: Chat Window -->
+            <div class="chat-window-container reveal">
+                <div class="chat-window">
+                    <div class="chat-header">
+                        <div class="chat-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="chat-title">Claude — PicLingo 기획 대화</div>
+                    </div>
+                    <div class="chat-body">
+                        <!-- Message 1 -->
+                        <div class="chat-msg user">
+                            <div class="avatar">나</div>
+                            <div class="bubble">해외 여행자들을 위한 카메라 번역 앱을 기획 중이야. 사용자들이 낯선 언어 앞에서 느끼는 주요 불편함 3가지를 정리해줘.
+                            </div>
+                        </div>
+                        <!-- Message 2 -->
+                        <div class="chat-msg ai">
+                            <div class="avatar">AI</div>
+                            <div class="bubble">
+                                <small>기획</small><br>
+                                ① 메뉴판의 복잡한 식재료 설명 부족 문제<br>
+                                ② 번역 결과의 정확도에 대한 불안함과 현지 정보 부재<br>
+                                ③ 손글씨나 약어 등 정형화되지 않은 텍스트 인식 어려움
+                            </div>
+                        </div>
+                        <!-- Message 3 -->
+                        <div class="chat-msg user">
+                            <div class="avatar">나</div>
+                            <div class="bubble">페르소나 3명 만들어줘. 이름, 나이, 직업, 한마디 인용구 포함해서.</div>
+                        </div>
+                        <!-- Message 4 -->
+                        <div class="chat-msg ai">
+                            <div class="avatar">AI</div>
+                            <div class="bubble">
+                                <small>페르소나</small><br>
+                                김지수(28·직장인) — "데이터로 나만의 루틴을..." (생략)<br>
+                                이민준(34·자영업자) — "효과 있는 제품만..." (생략)<br>
+                                박소연(22·대학생) — "쉬운 루틴부터..." (생략)
+                            </div>
+                        </div>
+                        <!-- Message 5 -->
+                        <div class="chat-msg user">
+                            <div class="avatar">나</div>
+                            <div class="bubble">Gemini API로 텍스트 추출 저장 코드 짜줘.</div>
+                        </div>
+                        <!-- Message 6 -->
+                        <div class="chat-msg ai">
+                            <div class="avatar">AI</div>
+                            <div class="bubble code">
+                                <small>개발</small><br>
+                                const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });<br>
+                                const result = await model.generateContent([prompt, imagePart]);
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Text Content -->
+            <div class="ai-text-content reveal" style="transition-delay: 0.2s;">
+                <span class="sub-title" style="color: var(--primary); letter-spacing: 0.3em;">AI PROMPT</span>
+                <h2 class="section-title"
+                    style="color: var(--white); font-family: var(--font-serif); font-size: 3.5rem; line-height: 1.2;">
+                    실제로 사용한<br><i style="font-family: var(--font-serif);">AI 프롬프트</i></h2>
+                <div style="width: 60px; height: 3px; background: var(--secondary); margin: 2rem 0;"></div>
+                <p style="color: rgba(255,255,255,0.6); font-size: 1.1rem; line-height: 1.8; max-width: 500px;">
+                    기획 단계부터 개발, 발표 자료까지 Claude와 나눈 실제 대화 예시입니다.
+                    AI를 협업 파트너로 활용해 혼자서도 완성도 높은 프로젝트를 완성할 수 있었습니다.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- 07 Process Timeline Section -->
+        <section id="process" class="process">
+            <div class="watermark-07">07</div>
+            <div class="container process-split-layout">
+                <!-- Left: Overview & Tools -->
+                <div class="process-overview reveal">
+                    <div class="work-period">
+                        <span class="process-label">작업 기간</span>
+                        <div class="work-period-card">
+                            <h3>4 Weeks <span>2026.04 — 2026.05</span></h3>
+                            <div class="progress-bar-container">
+                                <div class="progress-track">
+                                    <div class="progress-fill"></div>
+                                </div>
+                                <div class="progress-labels">
+                                    <span>기획</span>
+                                    <span>디자인</span>
+                                    <span>개발</span>
+                                    <span>발표</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tools-usage">
+                        <span class="process-label">사용 도구</span>
+                        <div class="tools-grid">
+                            <!-- Tool 1 -->
+                            <div class="tool-card">
+                                <span class="tool-icon">🎨</span>
+                                <div class="tool-name">Figma</div>
+                                <div class="tool-role">UI/ 프로토타이핑</div>
+                            </div>
+                            <!-- Tool 2 -->
+                            <div class="tool-card">
+                                <span class="tool-icon">🤖</span>
+                                <div class="tool-name">Claude</div>
+                                <div class="tool-role">기획 · 개발</div>
+                            </div>
+                            <!-- Tool 3 -->
+                            <div class="tool-card">
+                                <span class="tool-icon">🔥</span>
+                                <div class="tool-name">Firebase</div>
+                                <div class="tool-role">DB · 백엔드</div>
+                            </div>
+                            <!-- Tool 4 -->
+                            <div class="tool-card">
+                                <span class="tool-icon">📓</span>
+                                <div class="tool-name">Notion</div>
+                                <div class="tool-role">기획 · 일정</div>
+                            </div>
+                            <!-- Tool 5 -->
+                            <div class="tool-card">
+                                <span class="tool-icon">✨</span>
+                                <div class="tool-name">Gamma</div>
+                                <div class="tool-role">발표 자료</div>
+                            </div>
+                            <!-- Tool 6 -->
+                            <div class="tool-card">
+                                <span class="tool-icon">🔍</span>
+                                <div class="tool-name">Perplexity</div>
+                                <div class="tool-role">시장 리서치</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Timeline -->
+                <div class="process-timeline-v-container reveal" style="transition-delay: 0.2s;">
+                    <span class="sub-title" style="color: var(--secondary); letter-spacing: 0.3em;">PROCESS</span>
+                    <h2 class="section-title"
+                        style="color: var(--white); font-family: var(--font-serif); font-size: 3.5rem; line-height: 1.2; margin-bottom: 3rem;">
+                        4주간의<br><i style="font-family: var(--font-serif);">작업 과정</i></h2>
+
+                    <div class="process-timeline-v">
+                        <!-- Week 1 -->
+                        <div class="timeline-v-item">
+                            <span class="v-week">WEEK 01</span>
+                            <h4 class="v-title">기획 · 리서치</h4>
+                            <p class="v-desc">사용자 인터뷰, 페르소나 설정, 서비스 워크플로우 설계 및 아이디어 확정</p>
+                        </div>
+                        <!-- Week 2 -->
+                        <div class="timeline-v-item">
+                            <span class="v-week">WEEK 02</span>
+                            <h4 class="v-title">UI 디자인</h4>
+                            <p class="v-desc">디자인 시스템 구축, 카메라 및 번역 결과 화면 와이어프레임 설계</p>
+                        </div>
+                        <!-- Week 3 -->
+                        <div class="timeline-v-item">
+                            <span class="v-week">WEEK 03</span>
+                            <h4 class="v-title">개발 · 구현</h4>
+                            <p class="v-desc">Gemini Vision API 연동, 실시간 번역 엔진 및 Firebase 데이터베이스 구축</p>
+                        </div>
+                        <!-- Week 4 -->
+                        <div class="timeline-v-item active">
+                            <span class="v-week">WEEK 04</span>
+                            <h4 class="v-title">테스트 · 발표</h4>
+                            <p class="v-desc">사용자 사용성 테스트, 버그 수정 및 최종 프로젝트 배포 완료</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Section (Introduction Conclusion) -->
+        <section class="cta">
+            <div class="cta-bg">
+                <div class="cta-blob" style="top: 10%; left: 5%; width: 120px; height: 120px;"></div>
+                <div class="cta-blob" style="bottom: 8%; right: 6%; width: 180px; height: 180px;"></div>
+            </div>
+
+            <div class="cta-container container">
+                <div class="reveal">
+                    <span class="thank-you">Thank You</span>
+                    <h2>AI와 함께 만든<br>나만의 번역 앱</h2>
+                </div>
+                <div class="reveal" style="transition-delay: 0.1s;">
+                    <p class="cta-description">코딩을 몰라도, 디자인을 몰라도. AI 도구와 함께라면 누구나 세상을 바꿀 아이디어를 실현할 수 있습니다.</p>
+                </div>
+
+                <div class="project-tags reveal" style="transition-delay: 0.2s;">
+                    <div class="tag highlight">PicLingo</div>
+                    <div class="tag">AI 사진 번역 어플</div>
+                    <div class="tag">개인 프로젝트</div>
+                    <div class="tag">Figma + Claude + Firebase</div>
+                    <div class="tag">2026</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo-text">PicLingo</div>
+                <div class="footer-subtitle">AI 사진 번역 다이어리 · Concept View Portfolio 2026</div>
+            </div>
+        </footer>
+
+        <script>
+            // Scroll Navbar Effect
+            window.addEventListener('scroll', () => {
+                const nav = document.getElementById('navbar');
+                if (window.scrollY > 30) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+
+            // Reveal on Scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach(el => {
+                observer.observe(el);
+            });
+        </script>
+</body>
+
+</html>
