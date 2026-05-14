@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicLingo Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/PicLingo/piclingoB.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="logo">PicLingo</div>
+        <div class="menu">
+            <a href="#about">About</a>
+            <a href="#problem">Problem</a>
+            <a href="#stack">Tech</a>
+            <a href="#challenge">Challenge</a>
+            <a href="#design">Design</a>
+            <a href="#future">Future</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <p class="mini-text fade-up-hero" style="transition-delay: 0.1s;">AI TRAVEL TRANSLATION COMPANION</p>
+            <h1>
+                <div class="line"><span class="line-inner" style="transition-delay: 0.2s;">Snap & Solve</span></div>
+                <div class="line"><span class="line-inner" style="transition-delay: 0.3s;"><span class="em">The
+                            World</span></span></div>
+                <div class="line"><span class="line-inner" style="transition-delay: 0.4s;">Instantly</span></div>
+            </h1>
+            <p class="hero-desc fade-up-hero" style="transition-delay: 0.5s;">
+                단순한 번역을 넘어, 여행의 모든 순간을 이해하도록.<br>
+                사진 한 장으로 현지 문맥을 분석하고 생존 회화까지 가이드하는<br>
+                AI 기반 올인원 번역 플랫폼, PicLingo.
+            </p>
+            <div class="hero-actions fade-up-hero" style="transition-delay: 0.6s;">
+                <a href="#about" class="btn-primary">
+                    <span>Discover PicLingo</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                </a>
+                <div class="hero-metrics">
+                    <div class="metric">
+                        <span class="metric-num">0.8s</span>
+                        <span class="metric-label">Avg. AI Processing</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric">
+                        <span class="metric-num">95%</span>
+                        <span class="metric-label">Translation Accuracy</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric">
+                        <span class="metric-num">40%</span>
+                        <span class="metric-label">Latency Reduced</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image hero-image-1">
+            <img src="img/camera_capture_screen.png" alt="">
+        </div>
+        <div class="hero-image hero-image-2">
+            <img src="img/translation_start_screen.png" alt="">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <p class="section-tag">PROJECT OVERVIEW</p>
+            <h2 class="section-title">
+                언어 장벽을<br>
+                <span class="em">경험의 연결로 바꾸다</span>
+            </h2>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <span>Problem</span>
+                    <h3>여행자는 텍스트가 아닌 맥락을 원한다</h3>
+                    <p>낯선 타지의 메뉴판, 복잡한 표지판 앞에서 단순한 직역은 충분하지 않습니다. 여행자에게 진짜 필요한 것은 그 텍스트가 가진 '실제 의미'와 '상황에 맞는 정보'입니다.</p>
+                    <ul class="about-list">
+                        <li>모호한 단어의 상황별 오역</li>
+                        <li>음식 재료 등 상세 정보 부재</li>
+                        <li>현지 에티켓 및 문화 정보 부족</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <span>Solution</span>
+                    <h3>Snap & Solve: 시각적 이해와 언어 가이드</h3>
+                    <p>이미지를 촬영하는 순간 Gemini AI가 주변 상황을 함께 분석합니다. 메뉴의 재료 설명부터 거리 표지판의 방향까지, 단순 번역을 넘어 현지 경험을 확장합니다.
+                    </p>
+                    <div class="snap-steps">
+                        <div class="snap-step">
+                            <span class="snap-icon">📸</span>
+                            <div>
+                                <strong>Snap & Solve</strong>
+                                <p>카메라로 촬영 즉시 문맥 기반 분석</p>
+                            </div>
+                        </div>
+                        <div class="snap-step">
+                            <span class="snap-icon">📖</span>
+                            <div>
+                                <strong>Survival Phrases</strong>
+                                <p>상황별 필수 회화 및 발음 가이드</p>
+                            </div>
+                        </div>
+                        <div class="snap-step">
+                            <span class="snap-icon">📂</span>
+                            <div>
+                                <strong>Smart Gallery</strong>
+                                <p>번역된 이미지의 자동 카테고리 분류</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demand Bar Chart (PDF 추가) -->
+            <div class="demand-block">
+                <div class="demand-block-header">
+                    <p class="demand-label">User Demand Analysis</p>
+                    <p class="demand-sub">사용자 설문 결과, 단순 번역보다 '상황에 맞는 맥락 정보'에 대한 니즈가 압도적으로 높음을 확인했습니다.</p>
+                </div>
+                <div class="demand-bars">
+                    <div class="demand-row">
+                        <span class="demand-item-label">Context-Awareness</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" data-w="92"><span>92%</span></div>
+                        </div>
+                    </div>
+                    <div class="demand-row">
+                        <span class="demand-item-label">Visual Recognition</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" data-w="85"><span>85%</span></div>
+                        </div>
+                    </div>
+                    <div class="demand-row">
+                        <span class="demand-item-label">Local Guide Info</span>
+                        <div class="bar-track">
+                            <div class="bar-fill bar-fill--dim" data-w="70"><span>70%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERSONA / WHY WE BUILT THIS -->
+    <section class="persona" id="persona">
+        <div class="container">
+            <div class="persona-layout">
+                <div class="persona-text">
+                    <p class="section-tag">OUR MOTIVATION</p>
+                    <h2 class="section-title">
+                        <span class="em">PicLingo</span>의<br>
+                        제작 배경
+                    </h2>
+                    <p class="persona-desc">
+                        해외여행 중 낯선 간판이나 복잡한 메뉴판 앞에서 당황한 적이 있으신가요? 모르는 글자를 번역기에 직접 타이핑하는 것은 너무 번거롭고 시간이 오래 걸립니다. 시중에 사진 번역
+                        앱들이 있지만, 대부분 유료 결제를 유도하여 접근성이 떨어졌습니다.<br><br>
+                        우리는 <strong>누구나 비용 부담 없이, 사진 한 장만으로 언어의 장벽을 허물 수 있도록</strong> PicLingo를 기획했습니다.
+                    </p>
+                </div>
+                <div class="persona-target">
+                    <p class="section-tag">FOR WHOM</p>
+                    <h3 class="target-title">Our Target Audience</h3>
+                    <div class="target-cards">
+                        <div class="target-card">
+                            <span class="t-icon">🌍</span>
+                            <div>
+                                <h4>글로벌 여행자</h4>
+                                <p>현지 언어를 몰라도 자유롭게 여행하고 싶은 사람</p>
+                            </div>
+                        </div>
+                        <div class="target-card">
+                            <span class="t-icon">🎓</span>
+                            <div>
+                                <h4>유학생 및 교환학생</h4>
+                                <p>초기 현지 적응 시 빠른 텍스트 번역이 필요한 학생</p>
+                            </div>
+                        </div>
+                        <div class="target-card">
+                            <span class="t-icon">💼</span>
+                            <div>
+                                <h4>해외 파견 근무자</h4>
+                                <p>타국에서 일상적인 안내문이나 문서를 즉시 읽어야 하는 분</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="target-summary">연령이나 언어 능력에 상관없이, <strong>사진을 찍을 수 있는 누구나</strong> 직관적으로 사용할 수 있도록 설계했습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience" id="problem">
+        <div class="container">
+            <div class="experience-layout">
+
+                <div class="phone-frames">
+                    <div class="phone-frame pf-2">
+                        <img src="img/trsave.png" alt="">
+                    </div>
+                </div>
+
+                <div class="experience-content">
+
+                    <p class="section-tag">USER EXPERIENCE FLOW</p>
+
+                    <h2 class="section-title">
+                        복잡함은 뺴고,<br>
+                        <span class="em">정답만 남기다</span>
+                    </h2>
+
+                    <!-- 이하 동일 -->
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <div>
+                            <h3>지능형 Snap & Solve</h3>
+                            <p>단순 OCR을 넘어 이미지 속 객체와 상황을 인식합니다. 메뉴판을 찍으면 음식 이름뿐만 아니라 어떤 재료가 들어갔는지 설명해줍니다.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <div>
+                            <h3>Survival Phrases</h3>
+                            <p>교통, 음식, 쇼핑 등 상황별로 정리된 필수 회화 리스트를 제공합니다. 현지 발음과 팁까지 포함되어 당황하지 않고 대화할 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <div>
+                            <h3>Saved Images & Categories</h3>
+                            <p>번역된 이미지들은 음식, 표지판 등으로 자동 분류되어 저장됩니다. 나중에 다시 찾을 때 카테고리 필터를 통해 빠르게 검색할 수 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="tech-stack" id="stack">
+        <div class="container">
+            <p class="section-tag">TECH STACK & RATIONALE</p>
+            <h2 class="section-title">
+                기술 선택에도<br>
+                이유가 필요하다
+            </h2>
+            <div class="stack-grid">
+                <div class="stack-card">
+                    <h3>Frontend</h3>
+                    <h4>React / Next.js</h4>
+                    <p>컴포넌트 기반 구조를 통해 유지보수성과 재사용성을 높였으며, Next.js 기반 SSR 환경으로 SEO 최적화를 고려했습니다.</p>
+                    <div class="stack-tags"><span>Flex / Grid</span><span>Mobile First</span><span>TypeScript</span>
+                    </div>
+                </div>
+                <div class="stack-card">
+                    <h3>AI Integration</h3>
+                    <h4>Gemini 1.5 Pro</h4>
+                    <p>멀티모달 성능이 가장 뛰어난 모델을 선택하여 이미지 속 텍스트와 주변 맥락을 동시에 추론하도록 설계했습니다.</p>
+                    <div class="stack-tags"><span>Multimodal</span><span>Vision API</span><span>NLP</span></div>
+                </div>
+                <div class="stack-card">
+                    <h3>Backend</h3>
+                    <h4>Firebase</h4>
+                    <p>실시간 데이터 처리와 빠른 배포, 인증 및 Storage 기능 통합이 용이하여 적용했습니다.</p>
+                    <div class="stack-tags"><span>Realtime DB</span><span>Auth</span><span>Storage</span></div>
+                </div>
+            </div>
+
+            <!-- Performance Highlight (PDF 추가) -->
+            <div class="perf-block">
+                <div class="perf-num">0.8s</div>
+                <div class="perf-divider"></div>
+                <div class="perf-info">
+                    <h4>Efficiency over Complexity</h4>
+                    <p>서버 측 Transition 최적화와 효율적인 Keyframes 애니메이션 사용으로 저사양 기기에서도 끊김 없는 사용자 경험을 제공합니다. 특히 이미지 업로드 과정의
+                        Active 상태 피드백을 강화하여 체감 대기 시간을 줄였습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHALLENGE -->
+    <section class="challenge" id="challenge">
+        <div class="container">
+            <p class="section-tag">TECHNICAL CHALLENGES & TROUBLESHOOTING</p>
+            <h2 class="section-title">
+                단순 제작이 아닌<br>
+                문제 해결 과정
+            </h2>
+
+            <!-- Troubleshooting Table (PDF 추가) -->
+            <div class="trouble-wrap">
+                <table class="trouble-table">
+                    <thead>
+                        <tr>
+                            <th>Challenge</th>
+                            <th>Technical Solution</th>
+                            <th>Outcome</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="t-cell">
+                                    <span class="t-badge t-badge--red">Latency</span>
+                                    <strong>API 호출 지연</strong>
+                                    <p>이미지 전송 시 응답 지연으로 사용자 이탈 우려</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="t-cell">
+                                    <code>이미지 전처리 + 압축 알고리즘 적용</code>
+                                    <p>WebP 변환 및 클라이언트 측 리사이징으로 페이로드 최소화</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="t-outcome-cell">
+                                    <strong>40%</strong>
+                                    <span>응답 속도 개선</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="t-cell">
+                                    <span class="t-badge t-badge--amber">Accuracy</span>
+                                    <strong>이미지 텍스트 인식 오류</strong>
+                                    <p>저조도·기울어진 텍스트의 OCR 정확도 저하</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="t-cell">
+                                    <code>Gemini 프롬프트 엔지니어링 고도화</code>
+                                    <p>멀티턴 프롬프트 전략과 Few-shot 예시로 인식률 향상</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="t-outcome-cell">
+                                    <strong>95%</strong>
+                                    <span>번역 정확도 달성</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="t-cell">
+                                    <span class="t-badge t-badge--white">Responsive</span>
+                                    <strong>다양한 기기 해상도 대응</strong>
+                                    <p>모바일~데스크탑 전 해상도 레이아웃 붕괴</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="t-cell">
+                                    <code>CSS Flex & Grid 기반 유동적 레이아웃</code>
+                                    <p>컨테이너 쿼리와 clamp() 함수로 유연한 타이포그래피 구현</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="t-outcome-cell">
+                                    <strong>✓</strong>
+                                    <span>전 기기 UI 일관성</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="t-cell">
+                                    <span class="t-badge t-badge--white">UX</span>
+                                    <strong>로딩 상태 사용자 이탈</strong>
+                                    <p>AI 처리 중 빈 화면으로 인한 혼란</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="t-cell">
+                                    <code>@keyframes 스켈레톤 + 진행 피드백</code>
+                                    <p>단계별 진행 메시지와 Keyframes 애니메이션 조합</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="t-outcome-cell">
+                                    <strong>0.8s</strong>
+                                    <span>체감 대기 시간 단축</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="challenge-list">
+                <div class="challenge-item">
+                    <div class="challenge-left">Performance Optimization</div>
+                    <div class="challenge-right">이미지 업로드 과정에서 용량 최적화를 적용하여 초기 로딩 시간을 약 30% 단축했습니다. 불필요한 API 호출을 최소화하여 응답
+                        속도 또한 개선했습니다.</div>
+                </div>
+                <div class="challenge-item">
+                    <div class="challenge-left">API Error Handling</div>
+                    <div class="challenge-right">AI 응답 실패 상황을 대비하여 재시도 로직과 예외 처리 시스템을 구현했습니다. 네트워크 환경이 불안정한 상황에서도 안정적인
+                        UX를 유지했습니다.</div>
+                </div>
+                <div class="challenge-item">
+                    <div class="challenge-left">Deployment Debugging</div>
+                    <div class="challenge-right">Firebase 배포 과정에서 발생한 환경 변수 충돌 문제를 빌드 환경 분리를 통해 해결했습니다.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESIGN (UX/UI Interaction Strategy — PDF 추가) -->
+    <section class="design" id="design">
+        <div class="container">
+            <p class="section-tag">DESIGN PHILOSOPHY & UI/UX INTERACTION STRATEGY</p>
+            <h2 class="section-title">
+                직관적인 흐름과<br>
+                의도된 인터랙션
+            </h2>
+            <div class="design-grid">
+                <div class="design-box">
+                    <div class="design-box-tag">Hover / Active</div>
+                    <h3>Micro-Interactions</h3>
+                    <p>버튼 Active 상태 시 미세한 Scale Transform 적용. 주요 정보 Hover 시 Opacity 조절을 통한 강조로 사용자의 심리적 안정감을 제공합니다.</p>
+                </div>
+                <div class="design-box">
+                    <div class="design-box-tag">Transition / Transform</div>
+                    <h3>Easing Flow</h3>
+                    <p>모달 팝업 및 화면 전환 시 부드러운 맞춤형 이징 함수를 사용. Z-index Depth 활용으로 깊이감 있는 레이어 배치를 구현했습니다.</p>
+                </div>
+                <div class="design-box">
+                    <div class="design-box-tag">Flex / Grid</div>
+                    <h3>Mobile-First Layout</h3>
+                    <p>CSS Flex 박스와 Grid 시스템으로 모바일에 최적화된 반응형 UI 구현. 전 기기 UI 일관성을 확보했습니다.</p>
+                </div>
+                <div class="design-box">
+                    <div class="design-box-tag">Keyframes / Animation</div>
+                    <h3>AI Loading State</h3>
+                    <p>@keyframes 기반 순차 애니메이션으로 AI 분석 중임을 직관적으로 표시. 체감 대기 시간을 최소화했습니다.</p>
+                </div>
+                <div class="design-box">
+                    <div class="design-box-tag">Palette</div>
+                    <h3>Vibrant Yellow Identity</h3>
+                    <p>여행의 즐거움과 에너지를 상징하는 #FFD700 컬러를 포인트로 활용하여 밝고 직관적인 브랜드 아이덴티티를 구축했습니다.</p>
+                </div>
+                <div class="design-box">
+                    <div class="design-box-tag">Structure</div>
+                    <h3>Travel-Focused UX</h3>
+                    <p>한 손 조작이 잦은 여행 상황을 고려하여 주요 기능(카메라, 번역기)을 엄지손가락 범위 내에 배치하는 Bottom-Nav 구조를 채택했습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FUTURE / ROADMAP -->
+    <section class="future" id="future">
+        <div class="container">
+            <p class="section-tag">FUTURE DEVELOPMENT ROADMAP</p>
+            <h2 class="section-title">
+                앞으로의<br>
+                확장 가능성
+            </h2>
+            <div class="roadmap-wrap">
+                <div class="roadmap-line"></div>
+                <div class="future-content">
+                    <div class="future-card future-card--done">
+                        <div class="roadmap-dot roadmap-dot--done"></div>
+                        <p class="future-phase">Phase 1</p>
+                        <h3>Core</h3>
+                        <p>AI 번역 및 대화 가이드 엔진 고도화</p>
+                        <span class="future-status future-status--done">완료</span>
+                    </div>
+                    <div class="future-card">
+                        <div class="roadmap-dot"></div>
+                        <p class="future-phase">Phase 2</p>
+                        <h3>Social</h3>
+                        <p>장소 기반 커뮤니티 인증 시스템 및 실시간 피드</p>
+                        <span class="future-status">예정</span>
+                    </div>
+                    <div class="future-card">
+                        <div class="roadmap-dot"></div>
+                        <p class="future-phase">Phase 3</p>
+                        <h3>Global</h3>
+                        <p>다국어 지원 확장 및 오프라인 On-device AI 모드</p>
+                        <span class="future-status">예정</span>
+                    </div>
+                    <div class="future-card future-card--ar">
+                        <div class="roadmap-dot roadmap-dot--future"></div>
+                        <p class="future-phase">Phase 4</p>
+                        <h3>AR</h3>
+                        <p>증강 현실(AR) 기반 실시간 거리 간판 번역 레이어</p>
+                        <span class="future-status future-status--future">미래</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>PicLingo</h2>
+        <p class="footer-tagline"> AI 기반 여행 번역 경험 플랫폼</p>
+        <p class="footer-sub"> Concept View Portfolio 2026
+        </p>
+        <div class="footer-links">
+            <a href="https://github.com/yuni8181" target="_blank" rel="noopener"></a>
+            <a href="https://piclingo.live" target="_blank" rel="noopener"></a>
+            <a href="mailto:contact@piclingo.com"></a>
+        </div>
+    </footer>
+
+    <script>
+        // Hero Load Reveal Animation
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.querySelectorAll('.line-inner, .fade-up-hero').forEach(el => {
+                    el.classList.add('visible');
+                });
+            }, 100);
+        });
+
+        // Scroll Parallax for Hero
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            if (scrollY < window.innerHeight) {
+                document.body.style.setProperty('--sy', scrollY * 0.35 + 'px');
+                document.body.style.setProperty('--sy1', scrollY * 0.15 + 'px');
+                document.body.style.setProperty('--sy2', scrollY * 0.25 + 'px');
+                const heroContent = document.querySelector('.hero-content');
+                if (heroContent) {
+                    heroContent.style.opacity = 1 - (scrollY / window.innerHeight) * 1.2;
+                }
+            }
+        });
+
+        // Demand bars — animate width on scroll
+        const bars = document.querySelectorAll('.bar-fill');
+        const barIO = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.style.width = e.target.dataset.w + '%';
+                    barIO.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.3 });
+        bars.forEach(b => { b.style.width = '0'; barIO.observe(b); });
+
+        // Scroll reveal (fade-up)
+        const fadeEls = document.querySelectorAll(
+            '.about-card, .stack-card, .design-box, .future-card, .challenge-item, .step, .snap-step, .trouble-table tbody tr, .perf-block, .demand-block, .section-tag, .section-title'
+        );
+        const revIO = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    const idx = Array.from(fadeEls).indexOf(e.target);
+                    e.target.style.transitionDelay = (idx % 4) * 0.08 + 's';
+                    e.target.classList.add('visible');
+                    revIO.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.08 });
+        fadeEls.forEach(el => { el.classList.add('fade-up'); revIO.observe(el); });
+
+        // Nav — darken on scroll
+        const navEl = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            navEl.classList.toggle('nav-solid', window.scrollY > 60);
+        });
+    </script>
+
+</body>
+
+</html>
